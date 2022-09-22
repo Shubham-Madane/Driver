@@ -337,6 +337,9 @@ void lcd_write_8(uint8_t theByte)
     lcd_D0_port &= ~(1<<lcd_D0_bit);
     if (theByte & 1<<0) lcd_D0_port |= (1<<lcd_D0_bit);
 
+printf("shubham");
+
+
 // write the data
                                                     // 'Address set-up time' (40 nS)
     lcd_E_port |= (1<<lcd_E_bit);                   // Enable pin high
